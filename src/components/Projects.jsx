@@ -14,7 +14,7 @@ function Projects() {
         <article className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="w-full h-48 bg-gray-200">
             <img
-              src="src/assets/Screenshot 2024-11-06 162319.png"
+              src="/assetts/Screenshot 2024-11-06 162319.png"
               alt="What-Text Project"
               className="object-cover w-full h-full"
             />
@@ -37,7 +37,7 @@ function Projects() {
         <article className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="w-full h-48 bg-gray-200">
             <img
-              src="src/assets/Screenshot 2024-11-06 162627.png"
+              src="/assetts/Screenshot 2024-11-06 162627.png"
               alt="Money-Gainer Project"
               className="object-cover w-full h-full"
             />
@@ -60,7 +60,7 @@ function Projects() {
         <article className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="w-full h-48 bg-gray-200">
             <img
-              src="src/assets/Screenshot 2024-11-06 162711.png"
+              src="/assetts/Screenshot 2024-11-06 162711.png"
               alt="Media Player Project"
               className="object-cover w-full h-full"
             />

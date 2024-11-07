@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 function ContactMe() {
   return (
-    <div className="bg-black text-white p-8 mt-1">
+    <div className=" text-white p-8">
       <div className="flex flex-col items-center">
         <h3 className="text-2xl font-semibold mb-5"></h3>
 

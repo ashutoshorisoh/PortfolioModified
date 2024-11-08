@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar({ scrollToHome, scrollToProjects, scrollToContact, scrollToMain }) {
   return (
-    <div className="bg-orange-200 font-mono lg:h-16 w-full flex flex-row lg:justify-end justify-center items-center text-black lg:text-xl text-base lg:pr-10 pr-0 gap-5 p-5 sticky top-0 z-10">
+    <div className="bg-orange-200 font-mono lg:h-16 w-full flex flex-row lg:justify-end justify-center items-center text-black lg:text-xl text-lg lg:pr-10 pr-0 gap-5 p-5 sticky top-0 z-10">
       <button 
         className="text-black hover:text-gray-400"
         onClick={scrollToMain} // Scroll to Main Page

@@ -30,12 +30,12 @@ const MainPage = forwardRef((props, ref) => {
         <h1 className="lg:text-7xl text-4xl font-bold">Ashutosh Thakur</h1>
         <p className="lg:text-4xl text-xl mt-4">{title} Developer</p>
         <div className="flex justify-center gap-8 mt-6">
-          <FaReact className="lg:text-5xl text-4xl text-orange-200" />
-          <RiTailwindCssFill className="lg:text-5xl text-4xl text-orange-200" />
-          <FaHtml5 className="lg:text-5xl text-4xl text-orange-200" />
-          <FaCss3Alt className="lg:text-5xl text-4xl text-orange-200" />
-          <FaJs className="lg:text-5xl text-4xl text-orange-200" />
-          <FaGithub className="lg:text-5xl text-4xl text-orange-200" />
+          <FaReact className="lg:text-5xl text-3xl text-orange-200" />
+          <RiTailwindCssFill className="lg:text-5xl text-3xl text-orange-200" />
+          <FaHtml5 className="lg:text-5xl text-3xl text-orange-200" />
+          <FaCss3Alt className="lg:text-5xl text-3xl text-orange-200" />
+          <FaJs className="lg:text-5xl text-3xl text-orange-200" />
+          <FaGithub className="lg:text-5xl text-3xl text-orange-200" />
         </div>
         <div 
     className="mt-6 px-6 py-3 bg-orange-300 text-black hover:text-white lg:text-2xl text-lg font-semibold rounded-lg hover:bg-orange-900 transition-colors inline-flex items-center gap-2 cursor-pointer"

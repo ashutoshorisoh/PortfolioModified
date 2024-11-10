@@ -19,7 +19,7 @@ function ContactMe() {
 
         {/* Contact Information Section */}
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center space-x-6 text-lg mb-6">
+          <div className="flex flex-col items-center space-x-6 text-lg sm:text-sm mb-6">
             <div className="flex items-center space-x-2">
               <FaPhone />
               <span>+91 8777073706</span>

@@ -26,7 +26,7 @@ function ContactMe() {
             </div>
             <div className="flex items-center space-x-2">
               <FaEnvelope />
-              <span>thakurashutosh39920@gmail.com</span>
+              <span className='text-lg sm:text-sm'>thakurashutosh39920@gmail.com</span>
             </div>
           </div>
         </div>

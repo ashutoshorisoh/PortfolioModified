@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div className="bg-orange-200 font-mono lg:h-16 w-full flex flex-row lg:justify-end justify-center items-center text-black lg:text-2xl text-lg lg:pr-10 pr-0 lg:gap-5 gap-7 p-5 sticky top-0 z-10">
+    <div className="bg-orange-200 font-mono lg:h-16 w-full flex flex-row lg:justify-end justify-center items-center text-black lg:text-xl text-sm lg:pr-10 pr-0 lg:gap-5 gap-7 p-5 sticky top-0 z-10">
       {/* Navigation Links */}
       <Link to="/" className="text-black hover:text-gray-400 font-bold">
         Home

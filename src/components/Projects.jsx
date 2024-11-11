@@ -4,12 +4,12 @@ function Projects() {
   const projectsRef = useRef(null);
 
   return (
-    <div ref={projectsRef} className='font-mono pt-16'>
-      <div className="flex text-center justify-center bg-orange-300 font-mono text-black p-5 items-center">
-        <h3 className="text-4xl font-semibold">Projects</h3>
+    <div ref={projectsRef} className='font-mono p-3'>
+      <div className="flex text-center justify-center bg-transparent font-mono text-black p-5 items-center">
+        <h3 className="text-4xl font-semibold text-white">Projects</h3>
       </div>
 
-      <div className="max-w-full mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-orange-200 ">
+      <div className="max-w-full mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-transparent ">
         {/* Project 1 */}
         <article className="bg-orange-300 rounded-lg shadow-lg overflow-hidden">
           <div className="w-full h-48 bg-gray-200">

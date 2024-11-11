@@ -12,7 +12,7 @@ const Home = forwardRef((props, ref) => {
       <div className='flex justify-center items-center shadow-2xl'>
         <img src="/assetts/newt.png" alt="Profile" className='lg:h-60 lg:w-auto h-52 object-contain rounded-2xl' />
       </div>
-      <div className='lg:w-[50%] w-[80%] p-5 flex justify-center items-center text-center flex-col gap-6 bg-orange-300 text-black font-mono rounded-3xl'>
+      <div className='lg:w-[50%] w-[80%] p-5 flex justify-center items-center text-center flex-col gap-6 bg-transparent text-white font-mono rounded-3xl'>
         <h1 className="text-4xl font-semibold">Hi, I am Ashutosh</h1>
         <p className='lg:text-xl text-sm text-center'>
           A dedicated frontend developer with solid knowledge in JavaScript, React.js, and Tailwind CSS, along with hands-on experience in building interactive user interfaces. Currently expanding into backend technologies to become a full-stack developer.

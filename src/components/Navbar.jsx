@@ -1,33 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Navbar({ scrollToHome, scrollToProjects, scrollToContact, scrollToMain }) {
+function Navbar() {
   return (
-    <div className="bg-orange-200 font-mono lg:h-16 w-full flex flex-row lg:justify-end justify-center items-center text-black lg:text-xl text-sm  lg:pr-10 pr-0 lg:gap-5 gap-7 p-5 sticky top-0 z-10">
-      <button 
-        className="text-black hover:text-gray-400 font-bold"
-        onClick={scrollToMain} // Scroll to Main Page
-      >
+    <div className="bg-orange-200 font-mono lg:h-16 w-full flex flex-row lg:justify-end justify-center items-center text-black lg:text-2xl text-lg lg:pr-10 pr-0 lg:gap-5 gap-7 p-5 sticky top-0 z-10">
+      {/* Navigation Links */}
+      <Link to="/" className="text-black hover:text-gray-400 font-bold">
         Home
-      </button>
-      <button 
-        className="text-black hover:text-gray-400 font-bold"
-        onClick={scrollToHome} // Scroll to About Me
-      >
+      </Link>
+      <Link to="/about" className="text-black hover:text-gray-400 font-bold">
         About
-      </button>
-      <button 
-        className="text-black hover:text-gray-400 font-bold"
-        onClick={scrollToProjects} // Scroll to Projects
-      >
+      </Link>
+      <Link to="/projects" className="text-black hover:text-gray-400 font-bold">
         Projects
-      </button>
-      
-      <button 
-        className="text-black hover:text-gray-400 font-bold"
-        onClick={scrollToContact} // Scroll to Contact Me
-      >
+      </Link>
+      <Link to="/contact" className="text-black hover:text-gray-400 font-bold">
         Contact
-      </button>
+      </Link>
     </div>
   );
 }

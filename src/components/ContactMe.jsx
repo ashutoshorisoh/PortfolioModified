@@ -18,13 +18,13 @@ function ContactMe() {
         </div>
 
         {/* Contact Information Section */}
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center space-x-6 text-lg sm:text-sm mb-6">
-            <div className="flex items-center space-x-2">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center space-x-6 text-lg sm:text-sm mb-6">
+            <div className="flex items-center justify-center space-x-2">
               <FaPhone />
               <span>+91 8777073706</span>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center justify-center space-x-2 sm:space-x-0">
               <FaEnvelope />
               <span className='text-lg sm:text-sm'>thakurashutosh39920@gmail.com</span>
             </div>

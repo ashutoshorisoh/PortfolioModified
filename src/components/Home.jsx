@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Home = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className='min-h-screen p-10 w-full flex lg:flex-row flex-col gap-10 justify-center items-start mt-20 text-center'>
+    <div ref={ref} className='min-h-screen p-10 w-full flex lg:flex-row flex-col gap-10 justify-center items-center text-center'>
       <div className='flex justify-center items-center shadow-2xl'>
         <img src="/assetts/newt.png" alt="Profile" className='lg:h-60 lg:w-auto h-52 object-contain rounded-2xl' />
       </div>

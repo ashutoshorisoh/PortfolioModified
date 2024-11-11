@@ -14,7 +14,7 @@ function Projects() {
         <article className="bg-orange-300 rounded-lg shadow-lg overflow-hidden">
           <div className="w-full h-48 bg-gray-200">
             <img
-              src="/assetts/Screenshot 2024-11-06 162319.png"
+              src="/assetts/Screenshot 2024-11-06 162253.png"
               alt="What-Text Project"
               className="object-cover w-full h-full"
             />

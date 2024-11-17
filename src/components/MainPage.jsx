@@ -19,8 +19,8 @@ const MainPage = forwardRef((props, ref) => {
   }, []);
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/assetts/Ashutosh_Thakur_MERN_dev.pdf';
-    link.download = 'Ashutosh_Thakur_MERN_dev.pdf';
+    link.href = '/assetts/Ashutosh_Dev_CV.pdf';
+    link.download = 'Ashutosh_Dev_CV.pdf';
     link.click();
   };
 

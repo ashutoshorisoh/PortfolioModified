@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import MainPage from './components/MainPage';
 
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,8 +14,8 @@ function App() {
     <Router>
       <div className="flex flex-col">
         {/* Navbar is rendered on all pages */}
-        <Navbar />
-
+        
+        
         {/* Define the routes for each section */}
         <Routes>
           <Route path="/" element={<MainPage />} />

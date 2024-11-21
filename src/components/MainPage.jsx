@@ -32,7 +32,7 @@ const MainPage = forwardRef((props, ref) => {
       <div className="flex flex-col justify-between items-center p-5">
         <h1 className="text-green-400 font-bold text-5xl">
           <span className="text-white">Hey!, I'm </span> Ashutosh
-          <span className="text-white"> I am a </span>
+          <span className="text-white">  a </span>
           <p className="text-red-400">
             {title} <span className="text-white">Developer</span>
           </p>

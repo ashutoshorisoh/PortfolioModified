@@ -52,7 +52,7 @@ const MainPage = forwardRef((props, ref) => {
           <span>Resume</span>
           <FaDownload />
         </div>
-        <div className="flex flex-row gap-5 mt-20">
+        <div className="flex flex-row gap-5 mt-10">
           <button
             onClick={() => navigate("/about")}
             className="bg-black  border  border-white text-white hover:text-white px-5 py-2 rounded-md hover:bg-green-700 transition"

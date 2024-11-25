@@ -22,7 +22,7 @@ const MainPage = forwardRef((props, ref) => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/assetts/Ashutosh_Dev_CV.pdf";
+    link.href = "/assetts/Ashutosh_Developer_MERN.pdf";
     link.download = "Ashutosh_Dev_CV.pdf";
     link.click();
   };
@@ -47,7 +47,7 @@ const MainPage = forwardRef((props, ref) => {
         </div>
         <div
           onClick={handleDownload}
-          className="text-yellow-900 hover:text-yellow-100 flex pt-5 pb-5 mt-10 pl-7 pr-7 justify-center items-center bg-white hover:bg-green-700 cursor-pointer"
+          className="text-yellow-950 hover:text-yellow-100 flex pt-5 pb-5 mt-10 pl-7 pr-7 justify-center items-center rounded-md bg-white hover:bg-green-700 cursor-pointer"
         >
           <span>Resume</span>
           <FaDownload />
@@ -55,19 +55,19 @@ const MainPage = forwardRef((props, ref) => {
         <div className="flex flex-row gap-5 mt-10">
           <button
             onClick={() => navigate("/about")}
-            className="bg-black  border  border-white text-white hover:text-white px-5 py-2 rounded-md hover:bg-green-700 transition"
+            className="bg-black  border  border-white text-white hover:text-white px-5 py-2 rounded-md hover:bg-yellow-700 transition"
           >
             About Me
           </button>
           <button
             onClick={() => navigate("/projects")}
-            className="bg-black  border  border-white text-white px-5 py-2 rounded-md hover:bg-green-700 hover:text-white transition"
+            className="bg-black  border  border-white text-white px-5 py-2 rounded-md hover:bg-yellow-700 hover:text-white transition"
           >
             Projects
           </button>
           <button
             onClick={() => navigate("/contact")}
-            className="bg-black text-white border  border-white px-5 py-2 rounded-md hover:bg-green-700 transition hover:text-white"
+            className="bg-black text-white border  border-white px-5 py-2 rounded-md hover:bg-yellow-700 transition hover:text-white"
           >
             Contact Me
           </button>

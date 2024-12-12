@@ -1,30 +1,91 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiMoon, BiMenu, BiX } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaScroll } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { DiFirebase } from "react-icons/di";
+import { BsForwardFill } from "react-icons/bs";
+import { FaBackward } from "react-icons/fa";
+import { FaForward } from "react-icons/fa";
 
 function Entire() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState(1)
+  const [prevIndex, setPrevIndex] = useState(0)
   const [modalOpen, setModalOpen] = useState(false);
 
   const projects = [
-    { name: "Project 1", description: "Description of Project 1" },
-    { name: "Project 2", description: "Description of Project 2" },
-    { name: "Project 3", description: "Description of Project 3" },
+    { 
+      name: "What-Text", 
+      description: "A real-time chat app built with React.js, Tailwind CSS, and Firebase. Includes file-sharing functionality.", 
+      link: "https://what-textapp.web.app/", 
+      src:"/assetts/Screenshot 2024-11-06 162253.png", 
+      techStack: [<FaReact />, <RiTailwindCssFill />, <DiFirebase />]
+    },
+    { 
+      name: "VibeHub", 
+      description: "Building a full-stack project that features tutorial sharing, similar to YouTube, but with additional features like chatting, community, and more.", 
+      link: "https://ekminuteaap.netlify.app/", 
+      src:"/assetts/ekmi.jpeg", 
+      techStack: [<FaReact />, <SiExpress />, <DiMongodb />, <RiTailwindCssFill />]
+    },
+    { 
+      name: "MoneyGainer", 
+      description: "A web-based mines gaming app built with React.js and Tailwind CSS.", 
+      link: "https://money-gainer.vercel.app/", 
+      src:"/assetts/Screenshot 2024-11-06 162627.png", 
+      techStack: [<FaReact />, <RiTailwindCssFill />, ]
+    },
+    { 
+      name: "Media-Player", 
+      description: "A simple video player app made with React.js and Tailwind CSS.", 
+      link:"https://66e7e006bc17b4dce8f08c82--video-play-ok.netlify.app/", 
+      src:"/assetts/Screenshot 2024-11-06 162711.png", 
+      techStack: [<FaReact />, <RiTailwindCssFill />]
+    },
   ];
+  
 
-  const handleSwipe = (direction) => {
-    if (direction === "left") {
-      setCurrentSlide((prev) => (prev + 1) % projects.length);
-    } else if (direction === "right") {
-      setCurrentSlide(
-        (prev) => (prev - 1 + projects.length) % projects.length
-      );
+  const handleNext =()=>{
+    if(currentIndex<projects.length-1){
+      setCurrentIndex((prev)=>prev+1)
     }
-  };
+    else if(currentIndex==projects.length-1){
+      setCurrentIndex(0)
+    }
+  }
+
+  const handlePrev =()=>{
+    if(currentIndex==0){
+      setCurrentIndex(projects.length-1)
+    } else{
+      setCurrentIndex((prev)=>prev-1)
+    }
+  }
+
+  useEffect(()=>{
+    if(currentIndex==0){
+      setPrevIndex(projects.length-1)
+      setNextIndex(1)
+    } else if(currentIndex==projects.length-1){
+      setNextIndex(0)
+      setPrevIndex(currentIndex-1)
+    }
+    else{
+      setPrevIndex(currentIndex-1)
+      setNextIndex(currentIndex+1)
+    }
+  }, [currentIndex])
+
+  
 
   // Scroll to a section
   const scrollToSection = (section) => {
@@ -35,7 +96,7 @@ function Entire() {
   const toggleModal = () => setModalOpen(!modalOpen);
 
   return (
-    <div className="flex flex-col justify-center lg:items-center items-start gap-5 p-4">
+    <div className="flex flex-col justify-center lg:items-center items-start h-full gap-5 p-4">
       {/* Top Section */}
 
       <div className="flex flex-row items-center sticky top-0 bg-white  justify-between lg:p-5 p-2 shadow-md rounded-3xl border border-transparent w-full md:w-[80%] md:mx-auto">
@@ -141,18 +202,76 @@ function Entire() {
       </div>
 
       {/* Projects Section */}
-      <div id="projects" className="w-full flex flex-col items-center p-10">
-        <h2 className="text-4xl font-bold mb-5">Projects</h2>
-        <div className="relative w-full flex justify-center">
-          <div
-            className="w-full h-[300px] bg-gray-100 p-5 rounded-xl shadow-xl flex justify-center items-center cursor-pointer hover:scale-105 transition-all"
-            onClick={() => handleSwipe("left")}
-          >
-            <h3 className="text-2xl">{projects[currentSlide].name}</h3>
-            <p className="text-lg">{projects[currentSlide].description}</p>
-          </div>
+      <div className="flex justify-between items-center gap-4 w-full h-[600px]" id="projects">
+  {/* Previous Project Box */}
+  <div className="lg:flex justify-center items-center h-[80%] w-1/4 bg-slate-800 opacity-50 relative hidden md:flex">
+    <img
+      src={projects[prevIndex].src}
+      alt={projects[prevIndex].name}
+      className="h-full w-full object-cover absolute top-0 left-0 opacity-50 rounded-lg"
+    />
+    <div className="z-10 text-white">{projects[prevIndex].name}</div>
+  </div>
+
+  {/* Current Project Box (Largest) */}
+  <div className="flex flex-col justify-between items-center h-[80%] w-full md:w-[50%] bg-yellow-300 rounded-xl shadow-xl relative">
+    {/* Prev Button */}
+    <button
+      onClick={handlePrev}
+      className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-gray-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-600"
+    >
+      <FaBackward/>
+    </button>
+
+    {/* Project Content */}
+    <div className="flex flex-col justify-between items-center h-full w-full overflow-hidden border border-black bg-white rounded-lg">
+      {/* Image */}
+      <img
+        src={projects[currentIndex].src}
+        alt={projects[currentIndex].name}
+        className="h-[45%] w-full object-cover rounded-t-lg"
+      />
+      {/* Title, Description, Tech Stack, Live Link */}
+      <div className="flex flex-col justify-center items-center w-full h-[55%] bg-yellow-300  pb-5 pt-5 pl-6 pr-6">
+        <h1 className="font-bold text-2xl text-center">{projects[currentIndex].name}</h1>
+        <p className="text-lg mt-2 ml-10 mr-10 text-left">{projects[currentIndex].description}</p>
+        <div className="flex gap-6">
+          <span className="font-medium flex text-4xl mt-5 gap-5 text-black">{projects[currentIndex].techStack}</span>
         </div>
+        <a
+          href={projects[currentIndex].link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 mt-2 mb-2"
+        >
+          Live Link
+        </a>
       </div>
+    </div>
+
+    {/* Next Button */}
+    <button
+      onClick={handleNext}
+      className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-gray-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-600"
+    >
+      <FaForward/>
+    </button>
+  </div>
+
+  {/* Next Project Box */}
+  <div className="lg:flex justify-center items-center h-[80%] w-1/4 bg-slate-500 opacity-50 relative hidden md:flex">
+    <img
+      src={projects[nextIndex].src}
+      alt={projects[nextIndex].name}
+      className="h-full w-full object-cover absolute top-0 left-0 opacity-50 rounded-lg"
+    />
+    <div className="z-10 text-white">{projects[nextIndex].name}</div>
+  </div>
+</div>
+
+
+
+
 
       {/* Modal for Contact Me */}
       {modalOpen && (

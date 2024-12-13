@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-
+body {
+  position: relative; /* Ensure sticky works */
+  height: 200vh; /* Add sufficient height to enable scrolling */
 }

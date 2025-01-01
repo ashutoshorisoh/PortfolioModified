@@ -16,6 +16,8 @@ import { FaBackward } from "react-icons/fa";
 import { FaForward } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
+import { RiNextjsFill } from "react-icons/ri";
+
 
 function Entire() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,6 +44,22 @@ function Entire() {
       github:"https://github.com/ashutoshorisoh/1Minute-Frontend"
     },
     { 
+      name: "notesBaaton", 
+      description: "A simple notes sharing platform where users(specially students) can share notes and answers with there classmate and it doesnt require login, you just need to create a room and share the credentials with your people.", 
+      link:"https://notesbaaton.vercel.app/", 
+      src:"/assetts/notes.png", 
+      techStack: [<RiNextjsFill />, <RiTailwindCssFill />, <FaReact/>, <DiMongodb />],
+      github:"https://github.com/ashutoshorisoh/shareNote"
+    },
+    { 
+      name: "dhhnerds", 
+      description: "A platform were desi hip hop enthusiast can rate the latest releasd track from there favourite artist. This is more like imdb for music but a lot of new functionalities will be added", 
+      link:"https://dhhnerds.vercel.app/", 
+      src:"/assetts/dhhnerds.png", 
+      techStack: [<RiNextjsFill />, <RiTailwindCssFill />, <FaReact/>, <DiMongodb />],
+      github:"https://github.com/ashutoshorisoh/shareNote"
+    },
+    { 
       name: "MoneyGainer", 
       description: "A web-based mines gaming app built with React.js and Tailwind CSS.", 
       link: "https://money-gainer.vercel.app/", 
@@ -57,6 +75,8 @@ function Entire() {
       techStack: [<FaReact />, <RiTailwindCssFill />],
       github:"https://github.com/ashutoshorisoh/vidPlayer"
     },
+    
+    
   ];
   
 
@@ -249,7 +269,7 @@ function Entire() {
       className="flex justify-center items-center  rounded-xl pt-2 lg:pb-5 w-full  ">
         <h1 className="lg:text-4xl text-2xl font-bold  text-black pr-10 rounded-r-2xl" >About Me</h1>
       </div>
-      <p className="lg:text-2xl text-md font-base mt-4 text-justify leading-relaxed space-y-4 lg:mr-36 lg:ml-36" >
+      <p className="lg:text-2xl text-md font-thin mt-4 text-justify leading-relaxed space-y-4 lg:mr-36 lg:ml-36" >
   <span className="block lg:text-2xl text-md font-bold text-yellow-600">
     Hello! I'm Ashutosh Thakur,
   </span>
@@ -371,6 +391,10 @@ function Entire() {
     <div className="flex flex-col items-center">
       <FaReact className="text-blue-400" />
       <p className="text-lg font-medium mt-2">React</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <RiNextjsFill className="text-blue-400" />
+      <p className="text-lg font-medium mt-2">NextJS</p>
     </div>
     <div className="flex flex-col items-center">
       <RiTailwindCssFill className="text-teal-400" />

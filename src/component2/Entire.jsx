@@ -169,7 +169,7 @@ function Entire() {
 
     {/* Mode Icon and Hamburger (for small and medium screens) */}
     <div className="flex items-center gap-5">
-    <a href="/public/assetts/Ashutosh_Dev_FrEnd.pdf" download>
+    <a href="/public/assetts/Ashutosh_Dev_fe_CV.pdf" download>
   <button className="bg-black text-white rounded-full px-5 py-2 lg:block hidden shadow-md">
     Resume
   </button>

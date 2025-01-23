@@ -45,7 +45,7 @@ function Entire() {
     },
     { 
       name: "notesBaaton", 
-      description: "A simple notes sharing platform where users(specially students) can share notes and answers with there classmate and it doesnt require login, you just need to create a room and share the credentials with your people.", 
+      description: "A simple notes sharing platform which doesnt require login.", 
       link:"https://notesbaaton.vercel.app/", 
       src:"/assetts/notes.png", 
       techStack: [<RiNextjsFill />, <RiTailwindCssFill />, <FaReact/>, <DiMongodb />],
@@ -53,7 +53,8 @@ function Entire() {
     },
     { 
       name: "dhhnerds", 
-      description: "A platform were desi hip hop enthusiast can rate the latest releasd track from there favourite artist. This is more like imdb for music but a lot of new functionalities will be added", 
+      description: 
+      "More Like IMDb for music but for a specific genre (hip hop). Project is in progress right now", 
       link:"https://dhhnerds.vercel.app/", 
       src:"/assetts/dhhnerds.png", 
       techStack: [<RiNextjsFill />, <RiTailwindCssFill />, <FaReact/>, <DiMongodb />],

@@ -51,14 +51,14 @@ function Entire() {
       techStack: [<RiNextjsFill />, <RiTailwindCssFill />, <FaReact/>, <DiMongodb />],
       github:"https://github.com/ashutoshorisoh/shareNote"
     },
-    { 
-      name: "dhhnerds", 
-      description: 
-      "More Like IMDb for music but for a specific genre (hip hop). Project is in progress right now", 
-      link:"https://dhhnerds.vercel.app/", 
-      src:"/assetts/dhhnerds.png", 
+    {
+      name: "Task Tracker", 
+      description: "A Task Tracker application using ReactJS and Redux that allows users to manage their daily tasks efficiently.", 
+      link:"https://task-trackdaily.vercel.app/", 
+      src:"/assetts/tasktracker.png", 
       techStack: [<RiNextjsFill />, <RiTailwindCssFill />, <FaReact/>, <DiMongodb />],
-      github:"https://github.com/ashutoshorisoh/shareNote"
+      github:"https://github.com/ashutoshorisoh/task_tracker"
+      
     },
     { 
       name: "MoneyGainer", 
@@ -170,13 +170,13 @@ function Entire() {
 
     {/* Mode Icon and Hamburger (for small and medium screens) */}
     <div className="flex items-center gap-5">
-    <a href="/assetts/AshutoshThakur_Dev_FE_resume.pdf" download>
+    <a href="/assetts/Ashutosh Thakur_FrontEndDev.pdf" download>
   <button className="bg-black text-white rounded-full px-5 py-2 lg:block hidden shadow-md">
     Resume
   </button>
 </a>
 
-      <BiMoon className="text-2xl" />
+     
       <button
         className="block lg:hidden text-3xl"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -211,12 +211,19 @@ function Entire() {
           setMenuOpen(!menuOpen)}}>
           Projects
         </button>
-        <button className="text-md font-medium border hover:bg-yellow-600 hover:text-white pt-1 pb-1 border-transparent border-dotted pl-10 pr-10 rounded-xl" onClick={() => {
+        <button 
+        className="text-md font-medium border hover:bg-yellow-600 hover:text-white pt-1 pb-1 border-transparent border-dotted pl-10 pr-10 rounded-xl" onClick={() => {
           scrollToSection("mystack")
           setMenuOpen(!menuOpen)
           }}>
           My Stack
         </button>
+        <a href="/assetts/Ashutosh Thakur_FrontEndDev.pdf" download>
+  <button 
+  className="text-md font-medium border hover:bg-yellow-600 hover:text-white pt-1 pb-1 border-transparent border-dotted pl-10 pr-10 rounded-xl">
+    Resume
+  </button>
+</a>
         
       </div>
 

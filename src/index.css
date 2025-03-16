@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 body {
-  position: relative; /* Ensure sticky works */
-  height: 200vh; /* Add sufficient height to enable scrolling */
+ 
+  height: 100vh; /* Add sufficient height to enable scrolling */
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  width:100vw;
 }

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <Router>
-      jj
+  
       <div className="flex flex-col">
         {/* Navbar is rendered on all pages */}
         

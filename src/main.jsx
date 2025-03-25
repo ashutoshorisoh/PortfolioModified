@@ -7,6 +7,6 @@ import App3 from './App3.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App2/>
+    <App3/>
   </StrictMode>,
 )

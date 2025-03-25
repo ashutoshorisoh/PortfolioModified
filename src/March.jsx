@@ -4,6 +4,13 @@ import { FaXTwitter } from "react-icons/fa6";
 import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
 import { DiFirebase, DiMongodb } from 'react-icons/di';
 import { SiExpress } from 'react-icons/si';
+import { IoLogoJavascript } from "react-icons/io";
+import { DiHtml5 } from 'react-icons/di';
+import { DiCss3 } from 'react-icons/di';
+import { FaPython } from "react-icons/fa";
+import { SiSelenium } from "react-icons/si";
+
+
 
 function Portfolio() {
   const projects = [
@@ -62,6 +69,13 @@ function Portfolio() {
     { name: "Projects", target: "#projects" },
     { name: "Tech Stack", target: "#tech-stack" },
     { name: "Resume", target: "#resume" }
+  ];
+
+  const mobnavItems = [
+    { name: "About", target: "#about-mobile" },
+    { name: "Projects", target: "#projects-mobile" },
+    { name: "Tech Stack", target: "#tech-stack-mobile" },
+    { name: "Resume", target: "#resume-mobile" }
   ];
 
   const socialLinks = [
@@ -146,7 +160,7 @@ function Portfolio() {
             >
               {/* Project Image */}
               <div className="w-full lg:w-2/5">
-                <div className="aspect-square rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105 duration-300">
+                <div className="aspect-square rounded-lg overflow-hidden shadow-md transition-transform  duration-300">
                   <img
                     src={project.src}
                     alt={`${project.name} preview`}
@@ -216,13 +230,40 @@ function Portfolio() {
           {/* Placeholder for Tech Stack section */}
           <div id="tech-stack" className="w-full mb-12">
             <h2 className='text-3xl font-bold mb-8'>TECH STACK</h2>
-            {/* Tech stack content can be added here */}
+            
+            <div
+            className='flex gap-3 text-5xl justify-center items-center text-orange-700'
+            >
+             <FaReact/>
+             <RiNextjsFill/>
+             <SiExpress/>
+             <DiMongodb/>
+             <DiFirebase/>
+             <IoLogoJavascript />
+             <DiHtml5/>
+             <DiCss3/>
+
+             <RiTailwindCssFill/>
+             <FaGithub/>
+
+            </div>
+            
+
+
           </div>
 
           {/* Placeholder for Resume section */}
           <div id="resume" className="w-full mb-12">
             <h2 className='text-3xl font-bold mb-8'>RESUME</h2>
-            {/* Resume content can be added here */}
+            
+            <iframe 
+               src="assetts/Ashutosh Thakur_Resume.pdf" 
+               width="100%" 
+               height="930px">
+            </iframe>
+
+
+
           </div>
         </div>
       </div>
@@ -248,7 +289,7 @@ function Portfolio() {
           </p>
 
           <ul className="flex flex-col mt-1">
-            {navItems.map((item, index) => (
+            {mobnavItems.map((item, index) => (
               <li key={index}>
                 <a 
                   href={item.target}
@@ -296,7 +337,7 @@ function Portfolio() {
           </div>
 
           {/* Projects section for mobile */}
-          <h2 className='text-3xl font-bold'>MY PROJECTS</h2>
+          <h2 className='text-3xl font-bold' id="projects-mobile">MY PROJECTS</h2>
           {projects.map((project, index) => (
             <div 
               key={index}
@@ -372,14 +413,40 @@ function Portfolio() {
           ))}
 
           {/* Mobile placeholders for other sections */}
-          <div id="tech-stack-mobile" className="w-full mb-12">
+          <div id="tech-stack-mobile" className="w-full mb-6">
             <h2 className='text-3xl font-bold mb-8'>TECH STACK</h2>
-            {/* Tech stack content can be added here */}
+            
+            <div
+            className='grid grid-rows-2 grid-cols-4 gap-3 text-7xl justify-center items-center text-orange-700'
+            >
+             <FaReact/>
+             <RiNextjsFill/>
+             <SiExpress/>
+             <DiMongodb/>
+             <DiFirebase/>
+             <IoLogoJavascript />
+             <DiHtml5/>
+             <DiCss3/>
+
+             <RiTailwindCssFill/>
+             <FaGithub/>
+             <FaPython/>
+             <SiSelenium/>
+
+            </div>
+
+
           </div>
 
           <div id="resume-mobile" className="w-full mb-12">
             <h2 className='text-3xl font-bold mb-8'>RESUME</h2>
-            {/* Resume content can be added here */}
+            
+            <iframe 
+               src="assetts/Ashutosh Thakur_Resume.pdf" 
+               width="100%" 
+               height="597px">
+            </iframe>
+
           </div>
         </div>
       </div>

@@ -257,7 +257,7 @@ function Portfolio() {
             <h2 className='text-3xl font-bold mb-8'>RESUME</h2>
             
             <iframe 
-               src="assetts/Ashutosh Thakur_Resume.pdf" 
+               src="assetts/AshutoshThakurResume.pdf" 
                width="100%" 
                height="930px">
             </iframe>
@@ -442,7 +442,7 @@ function Portfolio() {
             <h2 className='text-3xl font-bold mb-8'>RESUME</h2>
             
             <iframe 
-               src="assetts/Ashutosh Thakur_Resume.pdf" 
+               src="assetts/AshutoshThakurResume.pdf" 
                width="100%" 
                height="597px">
             </iframe>

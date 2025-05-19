@@ -14,9 +14,17 @@ import { SiSelenium } from "react-icons/si";
 
 function Portfolio() {
   const projects = [
+    {
+      name: "Socialazy",
+      description:"A full stack social media app built with React js, express js, tailwind css, and mongodb",
+      link:'https://socialazy.vercel.app/',
+      src:/assetts/socialazy-logo.png',
+      techStack:[<FaReact key="react" />, <RiTailwindCssFill key="tailwind" />, <SiExpress key="express" />, <DiMongodb key="mongodb" />],
+      github:'https://github.com/ashutoshorisoh/sociaLazy-frontend.git'
+    }
     { 
       name: "What-Text", 
-      description: "A real-time chat app built with React.js, Tailwind CSS, and Firebase. Includes file-sharing functionality.", 
+      description: "A real-time chat app built with React.js, Tailwind CSS, and Firebase", 
       link: "https://what-textapp.web.app/", 
       src: "/assetts/whatext.png", 
       techStack: [<FaReact key="react" />, <RiTailwindCssFill key="tailwind" />, <DiFirebase key="firebase" />],

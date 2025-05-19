@@ -16,12 +16,12 @@ function Portfolio() {
   const projects = [
     {
       name: "Socialazy",
-      description:"A full stack social media app built with React js, express js, tailwind css, and mongodb",
+      description:"A full-stack social media app where you can post your thoughts and interact with others' posts",
       link:'https://socialazy.vercel.app/',
-      src:/assetts/socialazy-logo.png',
+      src:'/assetts/socialazy-logo (1).png',
       techStack:[<FaReact key="react" />, <RiTailwindCssFill key="tailwind" />, <SiExpress key="express" />, <DiMongodb key="mongodb" />],
       github:'https://github.com/ashutoshorisoh/sociaLazy-frontend.git'
-    }
+    },
     { 
       name: "What-Text", 
       description: "A real-time chat app built with React.js, Tailwind CSS, and Firebase", 
@@ -167,8 +167,8 @@ function Portfolio() {
               className="flex flex-col lg:flex-row gap-6 w-full max-w-5xl mx-auto p-6 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl shadow-lg overflow-hidden border border-slate-700 hover:border-orange-500 transition-all duration-300 mb-8"
             >
               {/* Project Image */}
-              <div className="w-full lg:w-2/5">
-                <div className="aspect-square rounded-lg overflow-hidden shadow-md transition-transform  duration-300">
+              <div className="w-full  lg:w-2/5">
+                <div className="aspect-square bg-gray-400 rounded-lg overflow-hidden shadow-md transition-transform  duration-300">
                   <img
                     src={project.src}
                     alt={`${project.name} preview`}
